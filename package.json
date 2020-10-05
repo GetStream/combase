@@ -1,0 +1,17 @@
+{
+  "name": "combase",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": "https://github.com/GetStream/combase.git",
+  "scripts": {
+    "build": "exit 0",
+    "publish": "yarn build && lerna publish --silent"
+  },
+  "author": "GetStream",
+  "license": "LicenseRef-LICENSE",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
