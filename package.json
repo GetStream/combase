@@ -10,7 +10,9 @@
     "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.stories.js,**/*.spec.js",
     "build:storybook": "build-storybook",
     "coverage": "jest --coverage",
-    "publish": "yarn build && lerna publish --silent",
+    "lerna:changed": "npx lerna changed",
+    "lerna:version": "npx lerna version",
+    "publish": "yarn build && npx lerna publish --silent",
     "start:storybook": "start-storybook -p 9000",
     "unit": "jest"
   },
