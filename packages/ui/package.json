@@ -1,11 +1,16 @@
 {
-  "name": "@combase/ui",
-  "version": "0.0.0",
-  "main": "lib/index.js",
-  "module": "src/index.js",
-  "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "styled-components": "^5.2.0"
-  }
+    "name": "@combase/ui",
+    "author": "GetStream",
+    "license": "UNLICENSED",
+    "version": "0.0.0",
+    "main": "lib/index.cjs.js",
+    "module": "lib/index.esm.js",
+    "scripts": {
+        "build": "rollup -c"
+    },
+    "peerDependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "styled-components": "^5.2.0"
+    }
 }
