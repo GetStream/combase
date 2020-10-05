@@ -6,12 +6,19 @@
   ],
   "repository": "https://github.com/GetStream/combase.git",
   "scripts": {
-    "build": "exit 0",
+    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.stories.js,**/*.spec.js",
     "publish": "yarn build && lerna publish --silent"
   },
   "author": "GetStream",
   "license": "LicenseRef-LICENSE",
   "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.11.1",
     "lerna": "^3.22.1"
   }
 }
