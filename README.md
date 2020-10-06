@@ -84,8 +84,12 @@ yarn start:storybook
 To start up the CRA development server for the `@combase/dashboard` run the following script:
 
 ```bash
-yarn start:storybook
+yarn start:dashboard
 ```
+
+### Widget
+
+[WIP]
 
 ### Linting & Testing
 
