@@ -7,4 +7,4 @@ export default {
   title: "UI/Button",
 };
 
-export const primary = () => <Button>{"Button"}</Button>;
+export const Default = () => <Button>{"Button"}</Button>;
