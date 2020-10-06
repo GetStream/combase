@@ -3,8 +3,8 @@
     "author": "GetStream",
     "license": "UNLICENSED",
     "version": "0.0.0",
-    "main": "lib/index.cjs.js",
-    "module": "lib/index.esm.js",
+    "main": "src/index.js",
+    "module": "src/index.js",
     "scripts": {
         "build": "rollup -c"
     }
