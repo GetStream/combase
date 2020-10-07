@@ -1,4 +1,4 @@
-import { colors } from '../constants';
+import { colors, gradients } from '../constants';
 
 import base from './base';
 
@@ -10,6 +10,10 @@ const light = {
         primary: colors.blue,
         surface: colors.white,
         text: colors.black,
+    },
+    gradient: {
+        ...base.gradient,
+        primary: gradients.blue,
     }
 };
 
