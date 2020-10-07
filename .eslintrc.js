@@ -3,6 +3,7 @@ module.exports = {
     rules: {
         'callback-return': 0,
         'eslint-comments/no-unlimited-disable': 0,
+        'import/exports-last': 0,
         'import/no-extraneous-dependencies': 0,
         'import/no-unresolved': 0,
         'no-warning-comments': 0,

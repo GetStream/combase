@@ -7,7 +7,3 @@ export const decorators = [(Story) => (
         <Story />
     </ThemeProvider>
 )];
-
-export const parameters = {
-  layout: 'centered',
-};
