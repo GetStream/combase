@@ -1,99 +1,69 @@
-# Combase
+# Combase – A Powerful White-Label Chat Support Platform
 
--   ⚛️ Open-source Customer Support Dashoard (PWA) built with React
--   🧩 Customer-Facing, Embeddable Widget
--   🦄 UI Component Library & Styling System powered by Styled Components & Storybook
--   👨‍🔬 Tooling Pipeline with Rollup (for shared libraries), Jest, ESLINT & more.
+![Combase Dashboard](images/dashboard.png)
 
-## Contents
+> **Note**: Combase is currently under active development and is not ready for production use.
 
--   [Contents](#contents)
--   [Setup](#setup)
-    -   [Pre-Requisites](#pre-requisites)
-    -   [Installation](#installation)
-    -   [Workspace Tips](#workspace-tips)
--   [Usage](#usage)
-    -   [UI & Styling Library](#ui-&-styling-library)
-    -   [Dashboard](#dashboard)
-    -   [Linting & Testing](#linting-&-testing)
+## What's Combase? 🤔
 
-## Setup
+Combase is a fully functional and customizable chat support platform built for any use-case. Packed with an intuitive and exhaustive feature set, Combase can be easily extended for use with third-party APIs through the built-in plugin system. Stream Chat and Activity Feed APIs power Combase to ensure all conversations and interactions are lightning-fast.
 
-### Pre-Requisites
+## Features 🔮
 
--   Yarn ^1.x
--   Node ^14.x
+- Support oriented realtime customer chat (polished for any support use-case) 💬
+- Full email support (bidirectional chat and email workflow) 📬
+- Agent friendly dashboard (an experience that makes sense) 😏
+- Lightweight and embeddable widget (easily embed on any site or app) 🧩
+- Realtime stats and metrics (detailed support overview) 👀
+- Role and permission management (choose who does what) 🔑
+- Built-in FAQ management (reduce support burden) 🤷‍♂️
+- Automatic routing (timezone, schedule, and ticket load based logic) 🗺️
+- Powerful plugins system (use existing plugins or build your own) 🧬
+- Modern tech stack and event-driven architecture (come code with us) 👩‍💻
+- Detailed UI component kit via Storybook (see what is possible) 💅
 
-### Installation
+> Want see more? Try the online [demo](@TODO).
 
-```bash
-git clone git@github.com:GetStream/combase.git
-cd combase
-yarn
-```
+## Resources 🛠️
 
-### Workspace Tips
+### Design Assets
 
-```bash
-yarn workspace <workspace_name> <command>
-```
+#### React UI Components
 
-This will run the chosen Yarn command in the selected workspace.
+<p align="center">
+    <a href="https://ui.combase.app" title="Sketch Cloud">
+        <img src="images/storybook.png" alt="Sketch Cloud" />
+    </a>
+    See what's possible with
+    <a href="https://ui.combase.app" title="Sketch Cloud Link">
+        Storybook 🔗
+    </a>
+</p>
 
-Example:
+#### Raw Sketch Assets
 
-```bash
-yarn workspace @combase/dashboard add react-router-dom --dev
-```
+<p align="center">
+    <a href="https://www.sketch.com/s/d9baffcf-9759-499a-adcc-e8d5a0794853" title="Sketch Cloud">
+        <img src="images/sketch.png" alt="Sketch Cloud" />
+    </a>
+    Download and inspect on 
+    <a href="https://www.sketch.com/s/d9baffcf-9759-499a-adcc-e8d5a0794853" title="Sketch Cloud Link">
+        Sketch Cloud 🔗
+    </a>
+</p>
 
-This will add `react-router-dom` as a dev dependency in the `@combase/dashboard` package, you can any package-specific script in this way.
+### Code 👨‍💻
 
-We have also included some handy root-level scripts to run commands across the entire workspace, or within multiple packages in parallel.
+The codebase is open-source and available on [Stream's GitHub](https://github.com/getstream/). The code has been decoupled into several repos.
 
-```json
-    "scripts": {
-        "bootstrap": "npx lerna bootstrap --use-workspaces", // Links together our shared packages locally
-        "build": "npx lerna exec --parallel -- yarn build", // runs yarn build for every package in parallel
-        "build:storybook": "build-storybook", // builds the production storybook
-        "coverage": "jest --coverage", // runs jest for entire workspace, with coverage report
-        "lerna:clean": "npx lerna clean", // Clear node_modules for all packages.
-        "lerna:changed": "npx lerna changed", // Show which packages have changed since the last publish
-        "lerna:version": "npx lerna version", // Generate version tags for each package and simulate a release.
-        "lint": "eslint . --ext .js", // Run linting across all workspaces
-        "publish": "yarn build && npx lerna publish --silent", // publishes all packages with changes to npm with Lerna.
-        "start:dashboard": "yarn workspace @combase/dashboard start", // starts the development server for the dashboard pwa.
-        "start:storybook": "start-storybook -p 9000", // starts the storybook component & design-system development server.
-        "unit": "jest" // runs jest for entire workspace
-    }
-```
+- [Frontend](https://github.com/getstream/combase-frontend)
+  - [Agent Dashboard](https://github.com/GetStream/combase-frontend/tree/main/packages/dashboard)
+  - [In-App Widget](https://github.com/GetStream/combase-frontend/tree/main/packages/widget)
+  - [UI Components](https://github.com/GetStream/combase-frontend/tree/main/packages/ui)
+- [Backend](https://github.com/GetStream/combase-backend)
+- [Plugins](https://github.com/GetStream/combase-plugins)
+- [Webhook System](https://github.com/getstream/combase-webhooks)
+  - [Ingress](https://github.com/GetStream/combase-webhooks/tree/main/packages/ingress)
+  - [Worker](https://github.com/GetStream/combase-webhooks/tree/main/packages/worker)
 
-> Note: Run `yarn bootstrap` whenever we add a new package to the monorepo.
-
-## Usage
-
-### UI & Styling Library
-
-To develop new components in an isolated environment and test visually, run the following script:
-
-```bash
-yarn start:storybook
-```
-
-### Dashboard
-
-To start up the CRA development server for the `@combase/dashboard` run the following script:
-
-```bash
-yarn start:dashboard
-```
-
-### Widget
-
-[WIP]
-
-### Linting & Testing
-
-```bash
-yarn unit # or
-yarn coverage
-```
+All reusable code that is specific to Combase is published on [npm](https://www.npmjs.com/org/combase.app) under the [@combase.app](https://www.npmjs.com/org/combase.app) organization.
