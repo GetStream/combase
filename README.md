@@ -26,30 +26,18 @@ Combase is a fully functional and customizable chat support platform built for a
 
 ## Resources 🛠️
 
-### Design Assets
+### Design Assets 🎨
 
-#### React UI Components
+Play with the components on [Storybook](https://ui.combase.app) 🔗
 
-<p align="center">
-    <a href="https://ui.combase.app" title="Sketch Cloud">
-        <img src="images/storybook.png" alt="Sketch Cloud" />
-    </a>
-    See what's possible with
-    <a href="https://ui.combase.app" title="Sketch Cloud Link">
-        Storybook 🔗
-    </a>
+<p>
+    <img src="images/storybook.png">
 </p>
 
-#### Raw Sketch Assets
+Download and inspect the designs on [Sketch Cloud](https://www.sketch.com/s/d9baffcf-9759-499a-adcc-e8d5a0794853) 🔗
 
 <p align="center">
-    <a href="https://www.sketch.com/s/d9baffcf-9759-499a-adcc-e8d5a0794853" title="Sketch Cloud">
-        <img src="images/sketch.png" alt="Sketch Cloud" />
-    </a>
-    Download and inspect on 
-    <a href="https://www.sketch.com/s/d9baffcf-9759-499a-adcc-e8d5a0794853" title="Sketch Cloud Link">
-        Sketch Cloud 🔗
-    </a>
+    <img src="images/sketch.png" alt="Sketch Cloud" />
 </p>
 
 ### Code 👨‍💻
