@@ -26,20 +26,6 @@ Combase is a fully functional and customizable chat support platform built for a
 
 ## Resources 🛠️
 
-### Design Assets 🎨
-
-Play with the components on [Storybook](https://ui.combase.app) 🔗
-
-<p>
-    <img src="images/storybook.png">
-</p>
-
-Download and inspect the designs on [Sketch Cloud](https://www.sketch.com/s/d9baffcf-9759-499a-adcc-e8d5a0794853) 🔗
-
-<p align="center">
-    <img src="images/sketch.png" alt="Sketch Cloud" />
-</p>
-
 ### Code 👨‍💻
 
 The codebase is open-source and available on [Stream's GitHub](https://github.com/getstream/). The code has been decoupled into several repos.
@@ -55,3 +41,17 @@ The codebase is open-source and available on [Stream's GitHub](https://github.co
   - [Worker](https://github.com/GetStream/combase-webhooks/tree/main/packages/worker)
 
 All reusable code that is specific to Combase is published on [npm](https://www.npmjs.com/org/combase.app) under the [@combase.app](https://www.npmjs.com/org/combase.app) organization.
+
+### Design Assets 🎨
+
+Play with the components on [Storybook](https://ui.combase.app) 🔗
+
+<p>
+    <img src="images/storybook.png">
+</p>
+
+Download and inspect the designs on [Sketch Cloud](https://www.sketch.com/s/d9baffcf-9759-499a-adcc-e8d5a0794853) 🔗
+
+<p align="center">
+    <img src="images/sketch.png" alt="Sketch Cloud" />
+</p>
